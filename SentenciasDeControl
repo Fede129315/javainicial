@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        //Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Ingrese el número que desee para porvar el if: ");
+        int numeroIf = reader.nextInt();
+        if (numeroIf>0) {
+            System.out.println("El número es positivo");
+        }
+        else if (numeroIf<0) {
+            System.out.println("El número es negativo");
+        }
+        else {
+            System.out.println("El número es 0");
+        }
+
+        //Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile sea inferior a 3,
+        // el bloque de código que tendrá el bucle deberá:
+        //Incrementar el valor de la variable en uno cada vez que se ejecute.
+        //Mostrarlo por pantalla cada vez que se ejecute.
+
+        System.out.println("Ingrese el número que desee para probar el While: ");
+        int numeroWhile= reader.nextInt();
+        int i=1;
+        while (numeroWhile<3){
+
+            System.out.println("la variable contiene el número : "+numeroWhile+" y se ejecuto el bucle "+i+" veces");
+            numeroWhile=numeroWhile+1;
+            i=i+1;
+        }
+        if (i==1) {
+            System.out.println("El While no se ejecuto");
+        }
+    }
+    //Para el bucle Do While, deberás crear la misma estructura que en el While, pero solo se debe ejecutar una vez.
+}
