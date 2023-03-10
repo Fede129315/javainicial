@@ -1,26 +1,25 @@
-
-public class Coche{
+class Coche{
     //propiedades
     int cantpuertas;
-    
+
     //metodo
     public static void main(String args[]) {
-        
+
         //creación del objeto miCoche
-        Coche miCoche = new Coche();    
-        miCoche.cantpuertas = puertas ;
-    
-        puertas= nextInt;
-        
+        Coche miCoche = new Coche();
+        // ultilización de la función suma puerta para agregar una puerta al objeto miCoche
+        miCoche.sumapuerta() ;
+        miCoche.sumapuerta() ;
+        miCoche.sumapuerta() ;
+        miCoche.sumapuerta() ;
+
         System.out.println("El coche tiene : " +miCoche.cantpuertas+" puertas");
-       
+
     }
-    
+
     //funcion agregar una puerta
-    public static int sumapuerta(){
-    
-    return 1
-    ;
+    public void sumapuerta(){
+        this.cantpuertas++;
+
     }
 }
-
